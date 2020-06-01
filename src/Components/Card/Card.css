@@ -1,0 +1,27 @@
+#card {
+  padding: 24px 0;
+  text-align: left;
+}
+.full_name_link {
+  color: #0366d6;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 14px;
+  color: #586069;
+  margin-bottom: 10px;
+  padding: 4px 0;
+}
+
+.other {
+  display: flex;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.other > div {
+  margin-right: 16px;
+}

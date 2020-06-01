@@ -1,3 +1,12 @@
+## 项目背景
+    平时会从各种渠道关注 GitHub 上的优质项目，包括前端相关、后端相关、算法相关等。目前为止已经积累了 346 stars。
+    由于 stars 项目数量的直线上升，产生了以下问题：
+    1、项目太多，未分类，导致在寻找某一类项目时比较困难
+    2、某些项目命名不是很规范，关注时间太长以后，再次看到这个项目，会忘记这个项目的特点，以及它要解决的问题
+   
+## 解决的问题
+    在 GitHub 原生的 API 基础上，将原始数据二次加工，实现分类功能。
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

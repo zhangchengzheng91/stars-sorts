@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
+import { Button} from 'antd'
+import Card from './Components/Card'
+import { getStarsApi } from './apis'
 import './App.css';
 
 function App() {
+  const [ data, setData ] = useState([])
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+
+  const getData = () => {
+    getStarsApi().then(res => {
+      const { data, ...restRes } = res
+      setData(data)
+    })
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>REPOSITORIES</div>
+      {
+        data.map(item => {
+            return <Card {...item} key={item.id}/>
+          }
+        )
+      }
     </div>
   );
 }
