@@ -1,6 +1,7 @@
 import React from 'react'
 import Tags from './Tags'
 import Home from './Home'
+import InitRepo from './InitRepo'
 import './global.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import axios from 'axios'
@@ -8,6 +9,7 @@ import axios from 'axios'
 const routes = [
   Home,
   Tags,
+  InitRepo,
 ]
 
 axios.interceptors.response.use(function (response) {
